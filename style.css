@@ -132,6 +132,8 @@
 
 .email-font {
   padding: 8px;
+  display: flex;
+  justify-content: center;
   background-color: #d9d9d9;
   border-radius: 50%;
 }
@@ -280,11 +282,17 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.icon-circle {
+  /* color: #8080ff; */
+}
+
 .right-section-first-line {
   width: 1px;
   height: 100%;
-  background-color: #8080ff;
-} /* .line {
+  background-color: #e2e6ee;
+}
+
+/* .line {
   width: 2px;
   height: 50px;
   color: black;
@@ -496,8 +504,18 @@
 
 .right-section-third {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  width: 100%;
+  flex: 1;
+  /* background-color: #8080ff; */
   /* align-items: center; */
+}
+
+.grid-container {
+  min-width: 100%;
+  display: flex;
+  /* flex: 1; */
+  /* background-color: #79819a; */
 }
 
 .grid-container-first {
@@ -508,17 +526,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   column-gap: 20px;
+  flex: 1;
 }
 
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
   background-color: #f7f9fc;
-  padding: 20px 110px 20px 20px;
+  padding: 20px 100px 20px 20px;
   font-size: 30px;
   text-align: center;
   border-radius: 12px;
   cursor: pointer;
+  min-width: 250px;
+  flex: 1;
 }
 
 .grid-item:hover {
@@ -575,6 +596,7 @@
   padding-bottom: 12px;
   gap: 10px;
   padding-bottom: 24px;
+  width: 100%;
 }
 
 .right-section-fourth {
@@ -860,4 +882,8 @@
   gap: 8px;
   flex-flow: row wrap;
   width: 100%;
+}
+
+.email-font img {
+  color: black;
 }
